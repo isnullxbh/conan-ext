@@ -13,15 +13,15 @@ A Conan recipe for the ext library
 ### Creating package
 
 ```shell
-conan export . ext/0.1.2@isnullxbh/testing
-conan install ext/0.1.2@isnullxbh/testing --build=ext --profile=gcc
-conan test test_package ext/0.1.2@isnullxbh/testing --profile=gcc
+conan export . ext/0.1.2@_/_
+conan install ext/0.1.2@_/_ --build=ext --profile=gcc
+conan test test_package ext/0.1.2@_/_ --profile=gcc
 ```
 
 ### Uploading package
 
 ```shell
-conan upload ext/0.1.2@isnullxbh/testing --all -r isnullxbh/public-conan
+conan upload ext/0.1.2@_/_ --all -r isnullxbh/public-conan
 ```
 
 ## Contact
