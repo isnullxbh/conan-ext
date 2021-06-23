@@ -7,21 +7,26 @@ A Conan recipe for the ext library
 ### Prerequisites
 
 - Python 3
-- Conan
-- C++ compiler supported C++20 (optional)
+- Conan package manager
+- Compiler with C++20 support
 
 ### Creating package
 
 ```shell
-conan export . ext/0.1.2@_/_
-conan install ext/0.1.2@_/_ --build=ext --profile=gcc
-conan test test_package ext/0.1.2@_/_ --profile=gcc
+# Copy the recipe to the local cache
+conan export . ext/0.1.4@_/_
+
+# Install the requirements specified in the recipe
+conan install ext/0.1.4@_/_ --build=ext --profile=gcc -s compiler.cppstd=20 -o ext:header_only=False
+
+# Test a package
+conan test test_package ext/0.1.4@_/_ --profile=gcc -s compiler.cppstd=20
 ```
 
 ### Uploading package
 
 ```shell
-conan upload ext/0.1.2@_/_ --all -r isnullxbh/public-conan
+conan upload ext/0.1.4@_/_ --all -r isnullxbh/testing
 ```
 
 ## Contact
