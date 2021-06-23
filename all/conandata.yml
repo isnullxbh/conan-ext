@@ -1,4 +1,7 @@
 sources:
+  "0.1.4":
+    url: "https://github.com/isnullxbh/ext/archive/refs/tags/v0.1.4.tar.gz"
+    sha256: "ec50348a7c0bff89f4cbd4d2255f83d2da8968c6d29b0dd479cadf702246b0d3"
   "0.1.3":
     url: "https://github.com/isnullxbh/ext/archive/refs/tags/v0.1.3.tar.gz"
     sha256: "59e15b7ced5ac6e81eebf7969cf0bdebdd33a7f1fb1cc3d600faae6e4910915e"
